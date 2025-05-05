@@ -1,5 +1,7 @@
-import 'package:class_work/homepage.dart';
 import 'package:flutter/material.dart';
+import 'package:class_work/Homepage.dart';
+import 'package:class_work/listview_page.dart';
+import 'package:class_work/gridview_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,7 +15,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
-      home: HomePage(),
+      home: const HomePage(),
     );
   }
 }
