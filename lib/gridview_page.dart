@@ -26,13 +26,13 @@ class GridViewPage extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text("GridView"),
+        title: const Text("GridView"),
         backgroundColor: Colors.deepPurple,
       ),
       body: GridView.builder(
-        padding: EdgeInsets.all(16),
+        padding: const EdgeInsets.all(16),
         itemCount: items.length,
-        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2,
           crossAxisSpacing: 10,
           mainAxisSpacing: 10,
@@ -47,10 +47,13 @@ class GridViewPage extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Image.network(items[index]['img']!, width: 64),
-                SizedBox(height: 10),
+                const SizedBox(height: 10),
                 Text(
                   items[index]['title']!,
-                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                  style: const TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
               ],
             ),

@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:class_work/Homepage.dart';
-import 'package:class_work/listview_page.dart';
-import 'package:class_work/gridview_page.dart';
+import 'home_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,7 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Flutter Navigation Demo',
       debugShowCheckedModeBanner: false,
       home: const HomePage(),
     );
